@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connection To Stylesheet -->
+    <link rel="stylesheet" href="./CSS/Style.css">
+
+    <!-- Box Icons Connection -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>PSI | Home</title>
+</head>
+<body>
+    <section class="header-section" id="Home">
+        <header class="header">
+            <div class="toggle-menu" onclick="toggleMenu();">
+                <i class='bx bx-menu'></i>
+            </div>
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Supplements">Supplements</a></li>
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Apparel</a></li>
+                <li><a href="#">Merch</a></li>
+            
+            </ul>
+            <a href="#" class="logo">PSI</a>
+            <ul class="navbar-icons">
+                <li><a href="#"><i id="facebook" class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i id="twitter" class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#"><i id="instagram" class='bx bxl-instagram-alt' ></i></a></li>
+                <li><a href="#"><i id="shopify" class='bx bxl-shopify' ></i></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="content-box">
+                <h2>Performance Science International</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium consectetur corrupti ducimus cupiditate rerum libero labore dolores, suscipit rem totam repellendus illo qui aperiam nostrum alias harum corporis iure.</p>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggle-menu');
+            const navigation = document.querySelector('.navbar');
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

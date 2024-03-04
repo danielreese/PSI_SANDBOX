@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    transition: 0.4s ease;
+    scroll-behavior: smooth;
+}
+
+.header-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(/Assets/Header/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+}
+
+.header-section .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header-section .header .toggle-menu {
+    display: none;
+}
+
+.header-section .header .navbar {
+    position: relative;
+    display: flex;
+}
+
+.header-section .header .navbar li {
+    list-style: none;
+}
+
+.header-section .header .navbar li a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.header-section .header .navbar li a:hover {    
+    color: #03a9f4;
+}
+
+.header-section .header .logo {
+    margin-left: -125px;
+    position: relative;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.header-section .header .navbar-icons {
+    position: relative;
+    display: flex;
+}
+
+.header-section .header .navbar-icons li {
+    list-style: none;
+}
+
+.header-section .header .navbar-icons i {
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.header-section .header .navbar-icons #facebook:hover {
+    color: #316FF6;
+}
+
+.header-section .header .navbar-icons #twitter:hover {
+    color: #1DA1F2;
+}
+
+.header-section .header .navbar-icons #instagram:hover {
+    color: #E1306C;
+}
+
+.header-section .header .navbar-icons #shopify:hover {
+    color: #96bf48;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content .content-box h2 {
+    font-size: 4rem;
+    color: #fff;
+    line-height: 1em;
+}
+
+.content .content-box p {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.content .content-box a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1300px) {
+    .header {
+        padding: 15px 40px;
+    }
+
+    .header-section {
+        padding: 40px;
+    }
+
+    .content .content-box h2 {
+        font-size: 2.5em;
+    }
+
+    .content .content-box p {
+        font-size: 1em;
+    }
+
+    .header-section .header .logo {
+        display: none;
+    }
+
+    .header-section .header .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 0, 0, 0, 0.1;
+        backdrop-filter: blur(10px);
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    .header-section .header .navbar.active {
+        display: flex;
+    }
+
+    .header-section .header .navbar li a {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .header-section .header .navbar-icons {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .header-section .header .toggle-menu {
+        display: flex;
+    }
+
+    .toggle-menu i {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .toggle-menu i.active {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
