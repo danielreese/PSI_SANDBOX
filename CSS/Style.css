@@ -16,7 +16,7 @@ html {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(/Assets/Header/Background.jpg);
+    background: url(./Assets/Header/Background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
