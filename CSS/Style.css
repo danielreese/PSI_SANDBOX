@@ -64,12 +64,12 @@ html {
 .header-section .header .logo {
     margin-left: -125px;
     position: relative;
-    font-size: 3rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1px;
+}
+
+.header-section .header .logo img {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
 .header-section .header .navbar-icons {
@@ -109,10 +109,8 @@ html {
     max-width: 600px;
 }
 
-.content .content-box h2 {
-    font-size: 4rem;
-    color: #fff;
-    line-height: 1em;
+.content .content-box img {
+    width: 200px;
 }
 
 .content .content-box p {
@@ -142,8 +140,8 @@ html {
         padding: 40px;
     }
 
-    .content .content-box h2 {
-        font-size: 2.5em;
+    .content .content-box img {
+        width: 100px;
     }
 
     .content .content-box p {
